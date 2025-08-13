@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Имя Docker-образа в GitHub Packages (замените на свои значения)
-        DOCKER_IMAGE = "ghcr.io/LeonArchie/test_push_doker:latest"
+        DOCKER_IMAGE = "ghcr.io/leonarchie/test_push_doker:latest"
         // Реестр GitHub Packages
         GITHUB_REGISTRY = "ghcr.io"
     }
