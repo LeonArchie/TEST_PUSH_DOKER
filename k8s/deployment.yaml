@@ -14,6 +14,8 @@ spec:
       labels:
         app: flask-app     # Метка, которая будет у создаваемых pod'ов
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
       containers:
       - name: flask-app    # Имя контейнера внутри pod'а
         image: "{{IMAGE_NAME}}"  # Используемый Docker образ
