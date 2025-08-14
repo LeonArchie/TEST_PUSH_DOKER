@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask-app    # Имя контейнера внутри pod'а
-        image: your-docker-username/flask-app:latest  # Используемый Docker образ
+        image: "{{IMAGE_NAME}}"  # Используемый Docker образ
         ports:
         - containerPort: 5000  # Порт, который открывает контейнер
         env:                   # Переменные окружения
