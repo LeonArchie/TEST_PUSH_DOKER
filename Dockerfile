@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 
 # Запускаем приложение
-CMD ["python", "app.py"]
+CMD ["python", "app/app.py"]
