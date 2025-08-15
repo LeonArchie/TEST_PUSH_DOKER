@@ -31,13 +31,13 @@ spec:
           limits:
             cpu: "500m"       # Лимит 0.5 CPU
             memory: "512Mi"   # Лимит 512 MiB памяти
-          livenessProbe:
-            httpGet:
-              path: /healthz  # или правильный путь для вашего приложения
-              port: 5000
-          readinessProbe:
-            httpGet:
-              path: /readyz   # или правильный путь для вашего приложения
-              port: 5000
+        livenessProbe:
+          httpGet:
+            path: /healthz  # или правильный путь для вашего приложения
+            port: 8080
           initialDelaySeconds: 5
           periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /readyz   # или правильный путь для вашего приложения
+            port: 8080
