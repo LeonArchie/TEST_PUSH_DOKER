@@ -34,10 +34,10 @@ spec:
         livenessProbe:
           httpGet:
             path: /healthz  # или правильный путь для вашего приложения
-            port: 8080
+            port: 5000
           initialDelaySeconds: 5
           periodSeconds: 10
         readinessProbe:
           httpGet:
             path: /readyz   # или правильный путь для вашего приложения
-            port: 8080
+            port: 5000
