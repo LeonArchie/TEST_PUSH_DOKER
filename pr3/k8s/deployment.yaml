@@ -32,7 +32,7 @@ spec:
             memory: "10Mi"   # Запрашиваем 128 MiB памяти
           limits:
             cpu: "10m"       # Лимит 0.5 CPU
-            memory: "15Mi"   # Лимит 512 MiB памяти
+            memory: "20Mi"   # Лимит 512 MiB памяти
         livenessProbe:
           httpGet:
             path: /healthz  # или правильный путь для вашего приложения
